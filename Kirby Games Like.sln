@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kirby Games Like", "Assembly-CSharp-firstpass.csproj", "{753E5E24-86BB-F990-5DF5-60F30E6257D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kirby Games Like", "Assembly-CSharp.csproj", "{A56F3CED-5A20-D8D3-9A04-950965EC1D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kirby Games Like", "Assembly-CSharp-Editor.csproj", "{C8ACB30C-0254-8775-24E1-B14EC4C4219C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{753E5E24-86BB-F990-5DF5-60F30E6257D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753E5E24-86BB-F990-5DF5-60F30E6257D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753E5E24-86BB-F990-5DF5-60F30E6257D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753E5E24-86BB-F990-5DF5-60F30E6257D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A56F3CED-5A20-D8D3-9A04-950965EC1D19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A56F3CED-5A20-D8D3-9A04-950965EC1D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A56F3CED-5A20-D8D3-9A04-950965EC1D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A56F3CED-5A20-D8D3-9A04-950965EC1D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8ACB30C-0254-8775-24E1-B14EC4C4219C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8ACB30C-0254-8775-24E1-B14EC4C4219C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8ACB30C-0254-8775-24E1-B14EC4C4219C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8ACB30C-0254-8775-24E1-B14EC4C4219C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
