@@ -20,7 +20,14 @@ public class ShatterToPlayer : MonoBehaviour {
         //{
         //    GetMove();
         //}   
-        GetMove();
+        if (player != null)
+        {
+            GetMove();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 	}
 
     void GetMove()

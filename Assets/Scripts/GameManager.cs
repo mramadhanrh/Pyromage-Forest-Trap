@@ -172,8 +172,8 @@ public class GameManager : MonoBehaviour
         GameOverObject.SetActive(true);
     }
 
-    public void Restart()
+    public void Sceneload(string scene)
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene(scene);
     }
 }

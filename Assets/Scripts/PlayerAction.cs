@@ -16,6 +16,7 @@ public class PlayerAction : MonoBehaviour {
     public GameObject shattered;
     public float jumpPower;
     public GameObject NoMana;
+    public Sprite[] butAction;
 
     [Range(0, 10)]
     public float speedhealing;
@@ -48,7 +49,20 @@ public class PlayerAction : MonoBehaviour {
         HpMpManager();
         ButtonManager();
         HpMpHealing();
+        if (mp <= mpDecrement)
+        {
+            buttonAction.GetComponent<Image>().sprite = butAction[0];
+        }
+        else
+        {
+            buttonAction.GetComponent<Image>().sprite = butAction[1];
+        }
 	}
+
+    public void infiniteMana()
+    {
+        mpDecrement = 0;
+    }
 
     void ButtonManager()
     {
@@ -102,12 +116,19 @@ public class PlayerAction : MonoBehaviour {
         {
             Shoot();
             GetComponent<AudioSource>().PlayOneShot(musicExplosion);
+            buttonAction.interactable = false;
+            StartCoroutine(DelayShoot());
         }
         else
         {
             StartAbsorb();
         }
-        
+    }
+
+    IEnumerator DelayShoot()
+    {
+        yield return new WaitForSeconds(0.7f);
+        buttonAction.interactable = true;
     }
 
     void StartAbsorb()
@@ -199,7 +220,7 @@ public class PlayerAction : MonoBehaviour {
             Vector3 playerPos = new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z);
             GameObject obj = (GameObject)Instantiate(
                 bulletObject,
-                playerPos + (transform.forward * 2),
+                playerPos + transform.forward,
                 Quaternion.identity);
 
             Vector3 a = transform.position + (transform.forward * 2);
